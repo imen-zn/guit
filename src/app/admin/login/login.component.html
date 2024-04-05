@@ -1,0 +1,46 @@
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+          class="img-fluid" alt="Image d'exemple">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4  offset-ml-1">
+        <form class="shadow p-4" (ngSubmit)="onSubmit()">
+
+          <div class="form-outline mb-4">
+            <input type="text" id="form3Example3" class="form-control form-control-lg"
+              placeholder="Entrez une adresse email valide"name="username" [(ngModel)]="username"  required/>
+            <label class="form-label" for="form3Example3">nom d'utilisateur</label>
+          </div>
+
+          <!-- Champ de saisie du mot de passe -->
+          <div class="form-outline mb-3">
+            <input type="password" id="form3Example4" class="form-control form-control-lg"
+              placeholder="Entrez le mot de passe" name="password" [(ngModel)]="password" required />
+            <label class="form-label" for="form3Example4">Mot de passe</label>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <!-- Case à cocher -->
+            <div class="form-check mb-0">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+              <label class="form-check-label" for="form2Example3">
+                Se souvenir de moi
+              </label>
+            </div>
+            <a href="#!" class="text-body">Mot de passe oublié?</a>
+          </div>
+
+          <div class=" text-lg-start mt-4 pt-2 text-lg-center">
+            <button type="submit" class="btn btn-primary btn-lg text-center"
+             >Se connecter</button>
+
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+</section>
