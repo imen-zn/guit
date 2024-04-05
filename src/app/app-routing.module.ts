@@ -7,17 +7,19 @@ import { ClientComponent } from './client/client.component';
 import { TechnicienComponent } from './technicien/technicien.component';
 import { DemandeComponent } from './client/demande/demande.component';
 import { ProfileComponent } from './client/profile/profile.component';
-import { authentiticationGuard } from './guards/authentication.guard';
+import { AuthenticationGuard } from './guards/authentication.guard';
 import { SignupClientComponent } from './authentification/signup-client/signup-client.component';
 import { SignupTechnicienComponent } from './authentification/signup-technicien/signup-technicien.component';
 import { ProfileTechComponent } from './technicien/profile-tech/profile-tech.component';
+import { LoginComponent } from './admin/login/login.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
 
 const routes: Routes = [
   {path:'public',component:PublicComponent,
   children:[
    { path: '', redirectTo: 'accueil', pathMatch: 'full' },
    {path:'accueil',component:HomeComponent},
-]}, 
+]},
 {path:'client',component:ClientComponent,
 children:[
   { path: '', redirectTo: 'accueil', pathMatch: 'full' },
@@ -27,7 +29,12 @@ children:[
 ]},
 {
   path: '',redirectTo: 'public', pathMatch: 'full'},
-{ path:'admin',component :AdminComponent},
+{ path:'admin',component :AdminComponent, canActivate: [AuthenticationGuard],
+  children:[
+    { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+    {path:'dashboard',component:DashboardComponent},]
+},
+{path:'login',component:LoginComponent},
 
 {path:'technicien',component:TechnicienComponent},
 {path:'inscriptionClient',component:SignupClientComponent},

@@ -1,0 +1,13 @@
+
+/* *************
+    ************ CSS Files *************
+************* */
+@import '../../assets/templateadmin/fonts/bootstrap/bootstrap-icons.css';
+@import '../../assets/templateadmin/css/main.min.css';
+/* *************
+    ************ Vendor Css Files *************
+************ */
+/* Scrollbar CSS */
+@import '../../assets/templateadmin/vendor/overlay-scroll/OverlayScrollbars.min.css';
+/* Toastify CSS */
+@import '../../assets/templateadmin/vendor/toastify/toastify.css';
