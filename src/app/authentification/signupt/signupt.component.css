@@ -1,0 +1,237 @@
+/* Import de la police Google - Poppins 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.login {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 30px;
+
+}
+
+.login header {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login form input[type="text"],
+.login form input[type="password"] {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.login form input[type="text"]:focus,
+.login form input[type="password"]:focus {
+  border-color:rgba(28, 83, 214, 0.9);  box-shadow: 0 0 5px rgba(21, 185, 217, 0.5);
+}
+
+.login form a {
+  font-size: 14px;
+  color:rgba(28, 83, 214, 0.9);  text-decoration: none;
+}
+
+.login form a:hover {
+  text-decoration: underline;
+}
+
+.login form input.button {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background: rgba(28, 83, 214, 0.9);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.4s;
+}
+
+.login form input.button:hover {
+  background:rgba(28, 83, 214, 0.9);
+}
+
+.signup {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signup label {
+  color: rgba(28, 83, 214, 0.9);
+  cursor: pointer;
+}
+
+.signup label:hover {
+  text-decoration: underline;
+}
+.btn-close{  /* Pour déplacer la croix à droite 
+  margin-left: 90%; /* Pour créer un espace entre le formulaire et la croix 
+  margin-top: 10px;
+}
+.hbs .hz-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10000;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.hbs * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+feuille de style de l’agent utilisateur
+div {
+  display: block;
+}
+style attribut {
+  --scrollbarWidth: 15px;
+  overflow: hidden;
+}
+.hbs, body.hbs {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+  font-size: 16px;
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.hbs *:before, .hbs *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.hbs *:before, .hbs *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}*/
+.modal-content {
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.onboarding-modal__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.onboarding-modal__card {
+  width: 45%;
+  margin: 0 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.onboarding-modal__card:hover {
+  border-color: #0f00b7;
+}
+
+.onboarding-modal__card-top {
+  display: flex;
+  align-items: center;
+}
+
+.onboarding-modal__card-icon {
+  margin-right: 10px;
+}
+
+.onboarding-modal__card-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.onboarding-modal__card-title title{
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.onboarding-modal__card-desc {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #666;
+}
+
+.onboarding-modal__card-bottom {
+  margin-top: 10px;
+}
+
+.onboarding-modal__card-list {
+  list-style: none;
+  padding: 0;
+}
+
+.onboarding-modal__card-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.onboarding-modal__card-list-item svg {
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  fill: #0073b7;
+}
+
+.onboarding-modal__card-list-item-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.onboarding-modal__card-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0073b7;
+  border: 1px solid #0073b7;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.onboarding-modal__card-btn:hover {
+  background-color: #005792;
+}
+
+.hidden {
+  display: none;
+}

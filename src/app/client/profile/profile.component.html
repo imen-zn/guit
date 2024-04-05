@@ -1,0 +1,127 @@
+<section id="profile">
+  
+  <div class="container">
+  <div class="row">
+      <div class="col-12">
+        <!-- Page title -->
+        <div class="my-5">
+          <h3>Profile</h3>
+          <hr>
+           </div>
+       </div>
+       <div class="panel">
+        <div class="bio-graph-heading">
+          La Solution Intelligente pour Votre Maintenance Médicale
+        </div>
+        <div class="panel-body bio-graph-info d-flex justify-content-center align-items-center flex-column">
+         
+          <h1 class="text-center">Profile details</h1>
+          <div class="row  ">
+              <div class="bio-row">
+               
+                  <p><span>Nom Complet </span>: {{ nomComplet }}</p>
+              </div>
+              <div class="bio-row">
+                  <p><span>Etablissement </span>: {{ etablissement }}</p>
+              </div>
+              <div class="bio-row">
+                  <p><span>Adresse </span>: {{ adresse }}</p>
+              </div>
+              <div class="bio-row">
+                  <p><span>Téléphone </span>: {{ telephone }}</p>
+              </div>
+              <div class="bio-row">
+                  <p><span>Email </span>: {{ email }}</p>
+              </div>
+          </div>
+      </div>
+       </div>
+        <div class="text-right"> <!-- Utilisation de la classe text-right de Bootstrap pour aligner le bouton à droite -->
+          <button class="btn btn-primary" type="button" (click)="toggleEdit()">Editer</button>
+      </div>
+    </div>
+    <div>
+    </div>
+    <br>
+              
+			
+    <div *ngIf="editMode">
+        <!-- Form START -->
+        <form class="file-upload">
+          <div class="row mb-5 gx-5">
+            <!-- Contact detail -->
+            <div class="col-xxl-8 mb-5 mb-xxl-0">
+              <div class="bg-secondary-soft px-4 py-5 rounded">
+                <div class="row g-3">
+                  <h4 class="mb-4 mt-0">Contact detail</h4>
+                  <div class="col-md-6">
+                    <label class="form-label">Nom Complete</label>
+                    <input type="text" class="form-control" placeholder="" name="username" value="Nom ">
+                  </div>
+                  <!-- First Name -->
+                  <div class="col-md-6">
+                    <label class="form-label">Etablisement</label>
+                    <input type="text" class="form-control" placeholder="" name="nomEtablissement" value="Nom de l'etablisement">
+                  </div>
+                  <!-- Last name -->
+                  <div class="col-md-6">
+                    <label class="form-label">Adresse</label>
+                    <input type="text" class="form-control" placeholder="" name="adresse" value="Tunisie">
+                  </div>
+                  <!-- Phone number -->
+                  <div class="col-md-6">
+                    <label class="form-label">Télephone</label>
+                    <input type="text" class="form-control" placeholder="" name="telephone" value="(333) 000 555">
+                  </div>
+                
+                  <!-- Email -->
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="inputEmail4" name="email" value="example@homerealty.com">
+                  </div>
+                  <!-- Skype -->
+                  <div class="col-md-6">
+                    <label for="formFileMultiple" class="form-label">Les documents requis</label>
+                    <input class="form-control" type="file" id="formFileMultiple" multiple />
+                  </div>
+                </div> <!-- Row END -->
+              </div>
+            </div>
+           
+  
+  
+            <!-- change password -->
+            <div class="col-xxl-6">
+              <div class="bg-secondary-soft px-4 py-5 rounded">
+                <div class="row g-3">
+                  <h4 class="my-4">Change Password</h4>
+                  <!-- Old password -->
+                  <div class="col-md-6">
+                    <label for="exampleInputPassword1" class="form-label">Old password *</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <!-- New password -->
+                  <div class="col-md-6">
+                    <label for="exampleInputPassword2" class="form-label">New password *</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2">
+                  </div>
+                  <!-- Confirm password -->
+                  <div class="col-md-12">
+                    <label for="exampleInputPassword3" class="form-label">Confirm Password *</label>
+                    <input type="password" class="form-control" id="exampleInputPassword3">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- Row END -->
+          <!-- button -->
+          <div class="gap-3 d-md-flex justify-content-md-end text-center">
+            <button type="button" class="btn btn-danger btn-lg">supprimer profile</button>
+            <button type="button" class="btn btn-primary btn-lg">Update profile</button>
+          </div>
+        </form> <!-- Form END -->
+      </div>
+    </div>
+
+
+</section>

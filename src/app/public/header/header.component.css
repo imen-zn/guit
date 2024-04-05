@@ -1,0 +1,28 @@
+.navbar-bg {
+ background-color: rgba(0, 0, 0, 0.843); /* Noir avec une opacité de 50%*/
+
+}
+/* Styles pour le bouton */
+.btn-get-started {
+  display: inline-block; /* Afficher en ligne */
+  background-color: blue; /* Couleur d'arrière-plan bleue */
+  color: white; /* Couleur du texte blanc */
+  padding: 10px 20px; /* Rembourrage */
+  text-decoration: none; /* Supprimer la décoration du texte */
+  border-radius: 5px; /* Bord arrondi */
+  transition: background-color 0.3s ease; /* Transition fluide pour le survol */
+}
+
+/* Changement de couleur de fond au survol */
+.btn-get-started:hover {
+  background-color: darkblue; /* Couleur d'arrière-plan foncée au survol */
+}
+
+.dropdown-toggle::after {
+  display: none; /* Pour masquer le triangle de la flèche de déroulement */
+}
+.navbar-btn {
+  display: inline-block; /* Permet aux boutons de se placer sur la même ligne */
+  margin-right: 10px; /* Ajoute un espace entre les boutons */
+}
+

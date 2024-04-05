@@ -1,0 +1,23 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    margin-left: 10px;
+    color:  #0d6efd;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #000;
+}
+
+/* Ajouter Font Awesome CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');

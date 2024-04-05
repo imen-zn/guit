@@ -1,0 +1,29 @@
+
+<div class="modal-content" id="myModal">
+  <!-- Modal body -->
+  <div class="modal-header">
+
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="CloseModel()"></button>
+    </div>
+
+  <div class="modal-body">
+
+      <div class="login form">
+          <header>Connexion</header>
+          <form (ngSubmit)="onSubmit()">
+            <input type="text" name="username"  placeholder="nom utilisateur" [(ngModel)]="username">
+            <input type="password" name="password" class="form-control rounded-left"  placeholder="mot de passe" [(ngModel)]="password" required>
+            <a href="#">Mot de passe oublié ?</a>
+            <input type="submit" class="button" value="Connexion">
+          </form>
+          <div class="signup">
+            <span class="signup">Vous n'avez pas de compte ?
+             <a routerLink="inscrire">S'inscrire</a>
+            </span>
+          </div>
+        </div>
+  <!-- Modal footer -->
+  <div class="modal-footer">
+
+  </div>
+</div>

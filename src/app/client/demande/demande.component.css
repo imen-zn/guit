@@ -1,0 +1,41 @@
+.search-container {
+  display: flex;
+  align-items: center;
+  color: black;
+  width: 70%; /* Ajuster la largeur de la zone de recherche */
+  max-width: 600px; /* Définir une largeur maximale pour la zone de recherche */
+  background-color: white; /* Couleur de fond de la zone de recherche */
+  border-radius: 25px; /* Arrondir les coins de la zone de recherche */
+  padding: 10px;
+  box-shadow: 0 4px 8px rgb(252, 251, 251); /*  Ajouter une ombre */
+  position: relative; /* Correction du problème de clic */
+}
+
+input[type="text"] {
+  flex: 1; /* Faire en sorte que l'entrée prenne autant d'espace que possible */
+  padding: 15px;
+  border: none;
+  border-radius: 25px; /* Arrondir les coins de l'entrée */
+  outline: none; /* Supprimer la bordure de mise au point */
+  z-index: 1; /* Correction du problème de superposition */
+}
+
+button {
+  padding: 15px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Ajouter une transition fluide */
+  z-index: 0; /* Définir un z-index plus bas */
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.fa-search {
+  font-size: 18px; /* Ajuster la taille de l'icône de recherche */
+}
+

@@ -1,0 +1,45 @@
+ <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top navbar-bg">
+  <div class="container d-flex align-items-center justify-content-lg-between">
+    <h6 class="logo me-auto me-lg-0"><a routerLink="/public"><img src="../../../assets/templategenyconnect/img/logo.png"></a></h6>
+
+    <nav id="navbar" class="navbar order-last order-lg-0 ">
+      <ul>
+        <li><a class="nav-link scrollto" routerLink="/public" routerLinkActive="active">Accueil</a></li>
+        <li><a class="nav-link scrollto" routerLink="/client" routerLinkActive="active" *ngIf="isClient && isConnected">Demande</a></li>
+        <li><a class="nav-link scrollto" routerLink="/about" routerLinkActive="active">Apropos</a></li>
+        <li><a class="nav-link scrollto" routerLink="/services" routerLinkActive="active">Services</a></li>
+        <li><a class="nav-link scrollto" routerLink="/contact" routerLinkActive="active">Contact</a></li>
+
+      </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+        </nav>
+        <!-- .navbar -->
+        <div  *ngIf="!isConnected">
+          <a (click)="openDialog()" class="get-started-btn navbar-btn">
+            <i class="fas fa-user icon-white"></i> Se connecter
+        </a>
+        <a (click)="openDialogins()" class="get-startedd-btn navbar-btn">
+            <i class="fas fa-bagage icon-white"></i> S'inscrire
+        </a>
+        
+            </div>   
+              
+
+            <div class="nav-item dropdown" *ngIf="isClient && isConnected">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                 aria-expanded="false">
+                  <i class="fas fa-user mx-1 icon-white"></i><span class="text-white">{{ username }}</span>
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" routerLink="/client/profile" >Mon profile</a></li>
+                  <li><a class="dropdown-item" >Suivie ma demande</a></li>
+                  <li><a class="dropdown-item" >Mon historique</a></li>
+                  <li><a class="dropdown-item" (click)="logout()">Se déconnecter</a></li>
+              </ul>
+          </div>
+
+  </div>
+</header><!-- End Header -->
